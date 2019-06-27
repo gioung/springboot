@@ -6,6 +6,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 @EnableAutoConfiguration
 public class BootInitializer extends SpringBootServletInitializer {
+	
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {

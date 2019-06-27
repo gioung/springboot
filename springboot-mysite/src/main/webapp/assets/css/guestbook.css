@@ -1,29 +1,79 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 @import "mysite.css";
 
-#guestbook			{ margin:20px auto;	width:540px; }
-
-#guestbook form, 
-#guestbook table	{ width:100% }
-
-#guestbook table,	
-#guestbook table td { border:1px solid #333 }
-#guestbook table td { padding:5px }
-
-#guestbook ul		{ width:100%; margin-top:20px }
-#guestbook ul li	{ width:100%; margin-top:10px }
-
-
-#guestbook.delete-form	{ height:200px }
-#guestbook.delete-form form {
-	width:300px;
-	padding:10px;
-	border:1px solid #666;
-	border-radius: 10px;
-	margin:50px auto;
+#guestbook {
+	/* border: 2px solid #333; */
+	margin: 15px;
+	padding: 0px;
 }
-#guestbook.delete-form a	{ display:block; margin:20px auto; width:110px }
 
-#guestbook.delete-message p	{ padding:100px; height:50px; text-align:center }
+#guestbook h1{
+	background: url('/assets/images/guestbook.png') no-repeat 0 0; 
+	background-size: 35px;
+	/* border: 2px solid #FF00FF; */
+	padding-left: 35px;
+	margin-bottom: 10px;
+}
+#add-form input{
+	height: 25px;
+	
+}
 
-#guestbook textarea#content	{ width: 100%; border:none; height: 100px; resize: none; outline: none; }
+#add-form textarea{
+	height: 100px;
+}
+
+#guestbook input, #guestbook textarea{
+	/* border: 2px solid #FF8000; */
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	
+}
+
+#input-submit{
+	background-color: white;
+	font-weight: bold;
+}
+
+#list-guestbook{
+	/* border: 1px solid #00FF00; */
+	
+}
+#list-guestbook li{
+	background: url('/assets/images/user.png') no-repeat 0 0;
+	/* border: 1px solid #FF00FF; */
+	position: relative;
+	background-position :left center;
+	padding: 2px;
+}
+#list-guestbook li strong, 
+#list-guestbook li p
+{
+	display: block;
+	/* border: 1px solid #000080; */
+	margin-left: 50px;
+	padding: 2px;
+}
+#list-guestbook li p{
+	padding-left: 20px;
+	background-color: #DFDFDF;
+	border-radius: 5px;
+}
+#list-guestbook li blockquote{
+	margin-left: 20px;
+	backg
+}
+#list-guestbook li a{
+	background: url('/assets/images/delete.png') no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	font-size: 0;
+	position: absolute;	
+	left: 19px;
+    top: 34px;
+	
+}
+
+
+

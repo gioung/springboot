@@ -31,6 +31,12 @@ public class GuestbookController {
 		return "guestbook/list";
 	}
 	
+	@RequestMapping(value="/timeline")
+	public String timeline(Model model){
+		
+		return "guestbook/index-ajax";
+	}
+	
 	@RequestMapping( value="/delete/{no}", method=RequestMethod.GET )
 	public String deleteform( @PathVariable( "no" ) Long no, Model model,HttpSession session ){
 		model.addAttribute( "no", no );
